@@ -56,10 +56,3 @@ The backend is built using Flask and includes:
 3. Use the measurement interface to select the shoulder, waist, and hip lines.
 4. View the calculated body shape analysis results.
 
-## Contributing
-
-Contributions are welcome! Please feel free to submit a pull request or open an issue for any enhancements or bug fixes.
-
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for more details.
