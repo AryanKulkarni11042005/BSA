@@ -284,3 +284,63 @@ table td:first-child {
   color: #a4574e;
   text-align: center;
 }
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 20px;
+}
+
+.instructions-sidebar {
+  flex: 1;
+  padding: 20px;
+  border-right: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+.main-content {
+  flex: 2;
+  padding: 20px;
+}
+
+.instructions-container {
+  text-align: left;
+}
+
+.instructions-container h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.instructions-container ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.instructions-container ul li {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.proceed-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.proceed-button:hover {
+  background-color: #0056b3;
+}
