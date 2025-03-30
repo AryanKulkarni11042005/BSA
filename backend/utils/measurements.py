@@ -12,17 +12,17 @@ def calculate_measurements(shoulder_line, waist_line, hip_line):
     Returns:
         Dictionary containing measurements and body shape information
     """
-    # Calculate widths (distance between leftmost and rightmost points on each line)
+    # WIDTH CALCUALTION
     shoulder_width = abs(shoulder_line[1]['x'] - shoulder_line[0]['x'])
     waist_width = abs(waist_line[1]['x'] - waist_line[0]['x'])
     hip_width = abs(hip_line[1]['x'] - hip_line[0]['x'])
     
-    # Calculate ratios
+    # RATIO CALCULATION
     shoulder_to_waist = shoulder_width / waist_width if waist_width > 0 else 0
     shoulder_to_hip = shoulder_width / hip_width if hip_width > 0 else 0
     waist_to_hip = waist_width / hip_width if hip_width > 0 else 0
     
-    # Determine body shape
+    # BODY SHAPE DETERMINATION
     body_shape = determine_body_shape(shoulder_width, waist_width, hip_width)
     
     result = {
